@@ -35,8 +35,9 @@ client.on('message', (msg) => {
 	];
 
 	const randomIndex = Math.floor(Math.random() * responses.length);
-  if (msg.content === 'Yahallo!') msg.reply(":wave:")
+  if (msg.content === 'Yahallo!') msg.reply("https://tenor.com/view/yui-yuigahama-yahallo-gif-18724491")
   else if (msg.content.includes("!8ball")) msg.reply(responses[randomIndex])
+  else if (msg.content === 'Sheeesh') msg.reply('https://tenor.com/view/sheesh-gif-21357175')
 })
 
 
